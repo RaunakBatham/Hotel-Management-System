@@ -2,3 +2,23 @@ body {
     background: url('./images/background.png');
     background-repeat: repeat;
 }
+.info{
+  float: left;
+}
+.info a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin-right: 20px;
+  cursor: default;
+}
+.social{
+  float: right;
+}
+.social a{
+  margin-right: 10px;
+  cursor: default;
+}
+.fab {
+  color: white;
+}
