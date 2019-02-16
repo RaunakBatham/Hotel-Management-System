@@ -13,15 +13,15 @@
         <div class="header">
             <div class="contact">
                 <div class="info">
-                    <a href="tel:+91987654321" class="number"><i class="fas fa-phone"></i> +91 987654321</p>
-                    <a href="mailto:admin@hotel.com" class="email"><i class="far fa-envelope"></i> admin@hotel.com</p>
+                    <a href="tel:+91987654321"><i class="fas fa-phone"></i> +91 987654321</a>
+                    <a href="mailto:admin@hotel.com"><i class="far fa-envelope"></i> admin@hotel.com</a>
                 </div>
                 <div class="social">
                     <a href="https://www.facebook.com"><i class="fab fa-facebook fa-lg"></i></a>
                     <a href="https://www.google.com"><i class="fab fa-google-plus fa-lg"></i></a>
                     <a href="https://www.twitter.com"><i class="fab fa-twitter fa-lg"></i></a>
                 </div>
-            </div>
+            </div><br/>
             <div class="navbar">
             
             </div>
