@@ -59,6 +59,22 @@
 			line-height: 170%;
             margin-right:16%;
 		}
+		.side
+		{
+			margin-right: 10px;
+
+		}
+		ul.con li{
+       width: auto;
+       float: left;
+       margin-right: 5%;
+       margin-top: 20px;
+       }
+       ul.con li::before
+       {
+       	content:" ";
+       }
+
     
     
     
