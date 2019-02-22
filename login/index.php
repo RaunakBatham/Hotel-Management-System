@@ -1,7 +1,7 @@
 <?php 
 // Login Page for the Customer
-require_once("../packages/include/globals.php");
-if(isset($_POST['email']) && isset($_POST['password'])){
+// require_once("../packages/include/globals.php");
+if(isset($_POST['email'], $_POST['password'])){
     $email = test_input($_POST['email']);
     $password = test_input($_POST['password']);
 
@@ -40,8 +40,8 @@ function test_input($data) {
 
     <body>
         <form method="POST">
-            <p><input type="email" name="email"/><?= $mailerr ?></p>
-            <p><input type="password" name="password"/><?= $passerr ?></p>
+            <p><input type="email" name="email" placeholder="Enter Email ID"/>ERROR</p>
+            <p><input type="password" name="password" placeholder="Enter Password"/><?= $passerr ?></p>
             <p><?= $loginerr ?></p>
             <input type="submit" value="Login"/>
         </form>
