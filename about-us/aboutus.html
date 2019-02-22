@@ -1,36 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="./packages/fontawesome-free-5.7.2-web/css/all.css">
-   <link rel="stylesheet" href="aboutus.css"/>
+	<link rel="stylesheet" href="../packages/fontawesome-free-5.7.2-web/css/all.css">
    <link rel="stylesheet" href="../home.css"/>
+ 
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="home.css">
+<style>
+body{
 
-
-    <script type="text/javascript">
-            window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").style.padding = "5px 8px";
-    document.getElementById("navbar").style.top = "0px";
-    document.getElementById("navbar").style.background = "#000000";
-
-
-
-  } else {
-    document.getElementById("navbar").style.padding = "20px 10px";
-    document.getElementById("navbar").style.top = "25px";
-    document.getElementById("navbar").style.background ="transparent";
-
+   background: url('../images/background.png');
+    background-repeat: repeat;
+}
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+  padding: 0 20px;
+}
+.menu a {
+  
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float:left;
+  width:80%;
+  padding:0 10%;
+  text-align: justify;
+  color:white;
+  letter-spacing: .05em;
+  font-family: montserratlight , sans-serif;
+  line-height: 170%
+  font-size:2vw;
+}
+.left {
+  background-color:white;
+  float:left;
+  width:20%;
+  padding:30px;
+  margin-top:7px;
+  text-align:center;
+  text-shadow: 10px;
+  font-size:1em;
+}
+li:before{
+      content: "\25C8";
+      color:gold;
+      font-size:1em;
+    }
+    ul{
+      list-style-type: none;
+      clear:both;
+      color:white;
+      font-size:1em;
+      letter-spacing: 0em;
+    }
+    .copyright
+    {
+      background-color:gold;
+      text-align:right;
+      padding:10px;
+      margin-top:7px;
+      color:black;
+      font-size:1em;"
+    }
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .left, .copyright ,ul,li{
+    width:100%;
 
   }
+  
+  
 }
-
-        </script>
-
-
-
+</style>
 </head>
 <body>
    <div class="header">
@@ -49,45 +100,26 @@ function scrollFunction() {
 
 
 
-
-    <div id="navbar">
-                <table width="90%">
-                    <tr><td align="right" width="47%">
-     <a href="index.php">Hotel</a>
-    <a href="#contact">Rooms</a>
-    <a href="#restaurant">Restaurant</a>
-<a href="#business">Business Offer</a></td></td>
-        <td align="center">
- <img src="../images/logo.png" width="60px" height="60px"></td>
- <td style="padding-left: 50px;" >
-    <a href="#occasion">Occational Events</a>
-    <a href="#Relaxation">Relaxation</a>
-    <a href="./about-us/aboutus.html">Location</a>
-    <a href="#contact">Contact</a>
-
-</td>
-</tr>
-</table>
-
+<div style="padding:15px;text-align:center;color:white;font-size:2vw;">
+  <h1>About Us</h1>
 </div>
 
+<div style="overflow:auto">
+  <div class="menu left">
+    <a href="#">News</a>
+    <a href="#">Gallery</a>
+    <a href="#">About Us</a>
+    <a href="#">History</a>
+  </div>
 
-
-
-
-
-<h1 class="about"><center><b>About Us</b></center></h1>
-   <b> <p class="main">The five-star Hotel Olive Ivory is a jewel of the 20th century architecture, located in the strict centre of Palawa City, Mumbai. Because of our prestigious location, we have already been a perfect haven for 10 years both for people travelling as a tourist, as well as for business purposes .</p></b>
-
-    <p class="main">We have <b>72 comfortably</b> equipped rooms, including two suites: The President Suite and the Ambassador Suite, with over one hundred metres of surface area, which are sure to awe even the most demanding Guests. We offer<b> 7 rooms</b>, where we have been preparing family and business meetings already for<b> 15 years</b>.</p>
-
-    <p class="main">The Hotel Olive Ivory is not merely the building but, above all, its people. We are a team of professionals, who can organise every event end-to-end.</p>
-
-    <p class="main">We have many years of experience, extensive conference facilities, as well as technical and catering equipment, and we will be more than happy to organise your meeting – both in our building, in a tent at the hotel's patio, as well as in any other place of your choosing.</p>
-    
-      
-      	       <h1 class="we main"><b>WE ORGANISE:</b></h1>
-<ul class="main">
+  <div class="main">
+    <p>The five-star Hotel Olive Ivory is a jewel of the 20th century architecture, located in the strict centre of Palawa City, Mumbai. Because of our prestigious location, we have already been a perfect haven for 10 years both for people travelling as a tourist, as well as for business purposes .</p>
+    <p>We have <b>72 comfortably</b> equipped rooms, including two suites: The President Suite and the Ambassador Suite, with over one hundred metres of surface area, which are sure to awe even the most demanding Guests. We offer<b> 7 rooms</b>, where we have been preparing family and business meetings already for<b> 15 years</b>.</p>
+    <p >The Hotel Olive Ivory is not merely the building but, above all, its people. We are a team of professionals, who can organise every event end-to-end.</p>
+    <p >We have many years of experience, extensive conference facilities, as well as technical and catering equipment, and we will be more than happy to organise your meeting – both in our building, in a tent at the hotel's patio, as well as in any other place of your choosing.</p>
+    <p>
+     <h1 ><b>WE ORGANISE:</b></h1>
+<ul>
 <li>Wedding Receptions,</li>
 <li>First Communion Parties,</li>
 <li>Baptisms,</li>
@@ -101,7 +133,13 @@ function scrollFunction() {
 <li>Galas,</li>
 <li>Business Break-fast,</li>
 <li>Company Anniversary Parties,</li>
-<li>Integration events and many others.</li></ul>
-<footer class="foot">&copy; Copyright 2019</footer>
-</body>   
+<li>Integration events and many others.</li></ul></p>
+
+
+  </div>
+</div>
+
+<div class="copyright">© copyright 2019</div>
+
+</body>
 </html>

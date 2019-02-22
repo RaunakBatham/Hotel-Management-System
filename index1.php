@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Olive Ivory</title>
+    	<title>Olive Ivory</title>
         <link rel="stylesheet" href="packages/fontawesome-free-5.7.2-web/css/all.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="home.css"/>        
@@ -10,7 +10,7 @@
         <div class="header fixed-top py-1" style ="z-index:-1">
             <div class="contact"  >
                 <div class="info">
-                    <a href="tel:+918360806758"><i class="fas fa-phone"></i> +91 8360806758</a>
+                    <a href="#"><i class="fas fa-phone"></i> +91 8360806758</a>
                     <a href="mailto:jashan113114@gmail.com"><i class="far fa-envelope"></i> admin@hotel.com</a>
                 </div>
                 <div class="social" >
