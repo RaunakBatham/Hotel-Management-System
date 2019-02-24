@@ -6,7 +6,7 @@
  
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="home.css">
+
 <style>
 body{
 
@@ -72,9 +72,20 @@ li:before{
       color:black;
       font-size:1em;"
     }
+    .column {
+  float: left;
+ 
+  width: 25%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
-  .menu, .main, .left, .copyright ,ul,li{
+  .menu, .main, .left, .copyright ,ul,li,.column,.row{
     width:100%;
 
   }
@@ -134,12 +145,26 @@ li:before{
 <li>Business Break-fast,</li>
 <li>Company Anniversary Parties,</li>
 <li>Integration events and many others.</li></ul></p>
+<p><h1 ><b>GALLERY</b></h1></p>
 
-
+  <div class="row ">
+   <div class="column">
+    <img src="../images/home.jpg" style="width:100%">
+   </div>
+   <div class="column">
+    <img src="../images/home1.jpg"style="width:100%">
+   </div>
+   <div class="column">
+    <img src="../images/home2.jpg"  style="width:100%">
+   </div>
+   <div class="column">
+    <img src="../images/home3.jpg"  style="width:100%">
+   </div>
   </div>
 </div>
+</div>
 
-<div class="copyright">© copyright 2019</div>
+<footer class="copyright">&copy; Copyright 2019</footer>
 
 </body>
 </html>
