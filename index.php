@@ -67,7 +67,21 @@
 	top:30px!important;
 	margin-top:2px;
 }
-/*AboutIntro*/
+/*-------------------------------------------------------------------------ReservationBAR*/
+.ReserveBar{
+  background-color: #eee;
+  margin-top: 10px;
+  height: auto;
+  text-align: center;
+}
+.ReserveBar input {
+  height: 2.5em;
+  width: 15em;
+  margin: 20px 10px;
+}
+/*---------------------------------------------------------------------END ReservationBAR*/
+
+/*-------------------------------------------------------------------------AboutIntro*/
 .aboutintro{
     margin-top: 10px;
     width: 100%;
@@ -350,10 +364,10 @@
       <img class="d-block w-100" src="./images/home.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="./images/home.jpg" alt="Second slide">
+      <img class="d-block w-100" src="./images/home1.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="./images/home.jpg" alt="Third slide">
+      <img class="d-block w-100" src="./images/home2.jpg" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -365,8 +379,16 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-<!------------------------------------------------------------------------------------------>
+<!--------------------------------------------------------------------------RESERVATION BAR-->
+<div class="ReserveBar">
+  <form method="post">
+    <input type="date" name="start" id="start"/>
+    <input type="date" name="end" id="end"/>
+    <input type="number" name="people" id="people" min="1" placeholder="People"/>
+    <input type="submit" value="Reserve Room"/>
+  </form>
+</div>
+<!--------------------------------------------------------------------------AboutUS INTRO---->
 
 <div class="aboutintro">
         <div class="introbox">

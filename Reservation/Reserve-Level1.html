@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservation Level 1</title>
+    <style>
+        /*------------------------------STYLE OF CURRENT PAGE INDICATOR*/
+        .current-page{
+            background-color: #eee;
+            height: 40px;
+        }
+        .current-page p{
+            padding: 10px;
+        }
+        /*--------------------------STYLE END OF CURRENT PAGE INDICATOR*/
+
+
+        /*-----------------------------------------------STYLE OF ROOM INFO*/
+        .roominfo{
+            margin-top: 10px;
+        }
+        .roominfo img{
+            vertical-align: top;
+            height: 100px;
+            width: 180px;
+        }
+        .roominfo > *{
+            display: inline-block;
+        }
+        .roomnames p:first-child{
+            vertical-align: top;
+        }
+        /*----------------------------------------END OF STYLE OF ROOM INFO*/
+    </style>
+</head>
+<body>
+    <!---------------------------------------------------CURRENT PAGE INDICATOR-->
+    <div class="current-page">
+        <p>Home &rarr; Reservation</p> <!---Insytead of This Show The Progress of Booking eg. Step 1/5, 2/5, 3/5 etc -->
+    </div>
+    <!--------------------------------------------END OF CURRENT PAGE INDICATOR-->
+
+    
+    <!---------------------------------------------------------Reservation Form-->
+    <div class="rooms">
+        <div class="roominfo">
+            <img src="room.jpg" alt="RoomIMG"/>
+            <div class="roomnames">
+                <p>Deluxe Room</p>
+                <p>room info adfs fsdf sfd sd f as s df s df as dg  t h r  r  sg df  sdgarg ar g a gragrg</p>
+            </div>
+            <select name="quantity" id="quantity">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <div class="roomprice">
+                <p>Room Cost</p>
+                <p>$6564 X 1 = $6564</p>
+            </div>
+            <input type="submit" value="book"/>
+        </div>
+
+
+        <div class="roominfo">
+            <img src="room.jpg" alt="RoomIMG"/>
+            <div class="roomnames">
+                <p>Deluxe Room 2</p>
+                <p>room info adfs fsdf sfd sd f as s df s df as dg  t h r  r  sg df  sdgarg ar g a gragrg</p>
+            </div>
+            <select name="quantity" id="quantity">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <div class="roomprice">
+                <p>Room Cost</p>
+                <p>$6564 X 1 = $6564</p>
+            </div>
+            <input type="submit" value="book"/>
+        </div>
+    </div>
+    <!--------------------------------------------------End of Reservation Form-->
+</body>
+</html>
