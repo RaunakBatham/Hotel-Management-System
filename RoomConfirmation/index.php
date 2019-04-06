@@ -67,126 +67,29 @@
 	top:30px!important;
 	margin-top:2px;
 }
-/*-------------------------------------------------------------------------ReservationBAR*/
-.ReserveBar{
-  background-color: #eee;
-  margin-top: 10px;
-  height: auto;
-  text-align: center;
-}
-.ReserveBar input {
-  height: 2.5em;
-  width: 15em;
-  margin: 20px 10px;
-}
-/*---------------------------------------------------------------------END ReservationBAR*/
 
-/*-------------------------------------------------------------------------AboutIntro*/
-.aboutintro{
-    margin-top: 10px;
-    width: 100%;
-    background-color: gray;
-    background-image: url('images/AboutBack.jpg');
-    height: 520px;
-    text-align: center;
-    padding-top: 50px;
-}
-.introbox{
-    background-color: white;
-    max-width: 320px;
-    margin: 0 auto;
-}
-.introbottom{
-    background-color: #333;
-    color: white;
-    padding: 20px;
-}
-.introbottom a{
-    text-decoration: none;
-    color: white;
-    border: 1px solid gold;
-    padding: 10px 50px;
-    white-space: nowrap;
-}
 
-/* Gallery */
-* {
-  box-sizing: border-box;
-}
-.menu {
-  float:left;
-  width:20%;
-  text-align:center;
-  padding: 0 20px;
-}
-.menu a {
-  
-  padding:8px;
-  margin-top:7px;
-  display:block;
-  width:100%;
-  color:black;
-}
-.main {
-  float:left;
-  width:80%;
-  padding:0 10%;
-  text-align: justify;
-  color:white;
-  letter-spacing: .05em;
-  font-family: montserratlight , sans-serif;
-  line-height: 170%
-  font-size:2vw;
-}
-.left {
-  background-color:white;
-  float:left;
-  width:20%;
-  padding:30px;
-  margin-top:7px;
-  text-align:center;
-  text-shadow: 10px;
-  font-size:1em;
-}
-    .column {
-  float: left;
- 
-  width: 25%;
-  padding: 5px;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-@media only screen and (max-width:620px) {
-  /* For mobile phones: */
-  .menu, .main, .left ,ul,li,.column,.row{
-    width:100%;
-
-  }
-  
-  
-}
-
-/*Amenities*/
-.amenities {
-        background-color: #ddd;
-    }
-    .amenities>div{
-        display: inline-block;
-        width: 19%;
-        text-align: center;
-        margin: 30px 0;
-    }
-    @media screen and (max-width: 670px){
-        .amenities>div{
-            display: block;
-            width: 100%;
-            margin: 0;
-            padding: 10px 0;
+/*------------------------------STYLE OF CURRENT PAGE INDICATOR*/
+.current-page{
+            background-color: #eee;
+            height: 40px;
         }
-    }
+        .current-page p{
+            padding: 10px;
+        }
+        /*--------------------------STYLE END OF CURRENT PAGE INDICATOR*/
+
+        /*---------------------------------------------STYLE OF DETAILS*/
+        .personcolumn{
+            display: inline-block;
+        }
+        .details input[type='submit']{
+            margin-top: 10px;
+        }
+        .confirmation p{
+            margin-left: 50px;
+        }
+        /*--------------------------------------END OF STYLE OF DETAILS*/
 
     /**********************************************************************/
         .column1 {
@@ -355,103 +258,62 @@
       
     </ul>
   </div> 
-</nav> 
-<!--<div class="mt-4" style ="height:1200px; background:black; width:100%;">
-</div>-->
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="./images/home.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="./images/home1.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="./images/home2.jpg" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<!-----------------------------------------------------------------------------------------RESERVATION BAR-->
-<div class="ReserveBar">
-  <form method="post" action="Reservation">
-    <input type="date" name="start" id="start"/>
-    <input type="date" name="end" id="end"/>
-    <input type="number" name="people" id="people" min="1" placeholder="People"/>
-    <input type="submit" value="Reserve Room"/>
-  </form>
-</div>
-<!--------------------------------------------------------------------------AboutUS INTRO---->
+</nav>
 
-<div class="aboutintro">
-        <div class="introbox">
-            <div class="introtop">
-                <h1>Olive Ivory</h1>
-                <p>Combining traditions with modernity through generations</p>
-            </div>
-            <div class="introbottom">
-                <p>ICON</p>
-                <p>The five-star Hotel Olive Ivory is a jewel of the 20th century architecture, located in the strict centre of Palawa City, Mumbai. Because of our prestigious location, we have already been a perfect haven for 10 years both for people travelling as a tourist, as well as for business purposes .</p>
-                <a href="aboutus.html">READ MORE</a>
-            </div>
-        </div>
+<!---------------------------------------------------CURRENT PAGE INDICATOR-->
+<div class="current-page">
+        <p>Home &rarr; Reservation</p>
     </div>
-<!------------------------------------------------------------------------------------------>
-<div class="row ">
-   <div class="column">
-    <img src="./images/home.jpg" style="width:100%">
-   </div>
-   <div class="column">
-    <img src="./images/home1.jpg"style="width:100%">
-   </div>
-   <div class="column">
-    <img src="./images/home2.jpg"  style="width:100%">
-   </div>
-   <div class="column">
-    <img src="./images/home3.jpg"  style="width:100%">
-   </div>
-  </div> 
-  <div class="amenities">
-        <div><i class="fas fa-wifi"></i><br/>Free Wifi</div>
-        <div><i class="fas fa-dumbbell"></i><br/>Gym</div>
-        <div><i class="fas fa-phone"></i><br/>24/7 Room Service</div>
-        <div><i class="fas fa-car"></i><br/>Valet Parking</div>
-        <div><i class="fas fa-tshirt"></i><br/>Laundry</div>
-  </div>
+    <!--------------------------------------------END OF CURRENT PAGE INDICATOR-->
 
-  <!---------------------------------------------------------------------------------------------------Footer--->
-  <div class="row1" style="background-color:  #333;">
+    
+    <!---------------------------------------------------------Reservation Form-->
+    <div class="confirmation">
+        <h1>Congrats, Rooms Booked</h1>
+        <h3>Persons : </h3>
+        <p>Person1<br/>
+        Person2<br/>
+        Person3</p>
+        <h3>Rooms : </h3>
+        <p>Room1 * 2</p>
+
+    </div>
+    <!--------------------------------------------------End of Reservation Form-->
+
+
+    <!---------------------------------------------------------------------------------------------------Footer--->
+<div class="row1" style="background-color:  #333;">
   <div class="column1">
         <h1><b><p style="color:white">Address</p></b></h1>
         <p style="color:white">Chaadar Road<br>Takia Colony<br>Palawa City</p>
         <p style="color:white">Mumbai-144111</p>
   </div>
+  
   <div class="column1">
     <h1><b><p style="color:white">Contact Us</p></b></h1>
     <div class="info1">
-    <a href="tel:+918360806758"><i class="fas fa-phone"></i> +91 8360806758</a><br>
-    <a href="mailto:jashan113114@gmail.com"><i class="far fa-envelope"></i> admin@hotel.com</a></div><br><br><br>
+        <a href="tel:+918360806758"><i class="fas fa-phone"></i> +91 8360806758</a><br>
+        <a href="mailto:jashan113114@gmail.com"><i class="far fa-envelope"></i> admin@hotel.com</a>
+    </div>
+    <br><br><br>
     <a href="https://www.facebook.com"><i class="fab fa-facebook fa-lg"></i></a>&nbsp;&nbsp;&nbsp;
     <a href="https://www.google.com"><i class="fab fa-google-plus fa-lg"></i></a>&nbsp;&nbsp;&nbsp;
     <a href="https://www.twitter.com"><i class="fab fa-twitter fa-lg"></i></a>
   </div>
+  
   <div class="column1">
-  <h1><b><p style="color:white">Location</p></b></h1>
-  <div class="google-map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.185833993463!2d72.81799441472788!3d18.967398587150342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce6cf5d15557%3A0x800a8ea61fa25eb!2sPalava+City!5e0!3m2!1sen!2sin!4v1550609798611" width="400" height="250" frameborder="0" style="border:0" ></iframe></p>
+    <h1><b><p style="color:white">Location</p></b></h1>
+    <div class="google-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.185833993463!2d72.81792063761478!3d18.967398587150342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce6cf5d15557%3A0x800a8ea61fa25eb!2sPalava+City!5e0!3m2!1sen!2sin!4v1550609798611" width="400" height="250" frameborder="0" style="border:0" ></iframe></p>
+    </div>
   </div>
-  </div>
-  </div>
-  </div>
-  </div>
-</body>
+  <!-------------------------------------------------------------------------------END OF FOOTER-->
+
+
+
+
+
+
 <script>
 	$(window).on('scroll', function () {
     if ($(this).scrollTop() > 30) {
@@ -468,7 +330,6 @@
         }
     }
 });
-	</script>
-</div>
-</div>
+</script>
+</body>
 </html>
