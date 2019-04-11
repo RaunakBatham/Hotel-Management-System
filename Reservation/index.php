@@ -162,7 +162,7 @@
    <button class="  mr-auto navbar-toggler no-focus " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
    	<img class="" src="http://assets.limetray.com/assets/image_manager/uploads/4697/hamburger-icon.png" height="50">
   </button><!-- Brand -->
-  <a href="#" class=" d-lg-none d-md-none "><img src="https://tajindiancuisine.com/wp-content/uploads/2018/04/taj_logo-0418.png" height="70" id="logo"/></a>
+  <a href="index.php" class=" d-lg-none d-md-none "><img src="https://tajindiancuisine.com/wp-content/uploads/2018/04/taj_logo-0418.png" height="70" id="logo"/></a>
 
   <!-- Toggler/collapsibe Button -->
  
