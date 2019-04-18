@@ -274,9 +274,9 @@
       </a>
       <div class="dropdown-menu">
       	<a class="dropdown-item" href="#">News</a>
-                        <a class="dropdown-item" href="#">Gallery</a>
+                        <a class="dropdown-item" href="./Gallery/gal.html">Gallery</a>
                         <a class="dropdown-item" href="./about-us/aboutus.html">About Us</a>
-                        <a class="dropdown-item" href="#">History</a>
+                        <a class="dropdown-item" href="./about-us/history.html">History</a>
                         <a class="dropdown-item" href="#">Offers</a>
         
       </div>
@@ -309,15 +309,15 @@
       </a>
       <div class="dropdown-menu">
         				<ul>
-                        <li><a href="#">Conference</a></li>
-                        <li><a href="#">Coffee Break</a></li>
-                        <li><a href="#">Catering</a></li>
-                        <li><a href="#">Breakfasts</a></li>
-                        <li><a href="#">Banquet</a></li>
+                         <li><a href="../Business/confer.html">Conference</a></li>
+                        <li><a href="../Business/coffee.html">Coffee Break</a></li>
+                        <li><a href="../Business/cater.html">Catering</a></li>
+                        <li><a href="../Business/break.html">Breakfasts</a></li>
+                        <li><a href="../Business/banquet.html">Banquet</a></li>
                     </ul>
       </div>
     </li>
-    <a href="#" class="margin-negative py-1 d-none d-lg-block d-md-block"><img src="https://tajindiancuisine.com/wp-content/uploads/2018/04/taj_logo-0418.png" height="70" id="logo"/></a>
+    <a href="../index.php" class="margin-negative py-1 d-none d-lg-block d-md-block"><img src="https://tajindiancuisine.com/wp-content/uploads/2018/04/taj_logo-0418.png" height="70" id="logo"/></a>
     <li class="nav-item dropdown">
       <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
         Events
