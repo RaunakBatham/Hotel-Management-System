@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -266,40 +269,32 @@
     <!---------------------------------------------------------Reservation Form-->
     <form method="POST" action="../RoomConfirmation">
     <div class="details">
-        <div class="person">
-            <div class="personcolumn">
-                <p>Person 1 Name</p>
-                <input type="text" size="50" name="name" id="name"/>
-            </div>
-            <div class="personcolumn">
-                <p>Enter Age</p>
-                <input type="number" name="age" id="age"/>
-            </div>
+    <div class="mx-auto" style="max-width:800px;">
+        <h1>Customers Information</h1>
+        <hr>
+        <form action="../RoomConfirmation" method="post">
+        <?php
+        for($i = 0; $i < $_SESSION['people']; $i++){
+        echo '<div class="form-group mx-auto">';
+        echo '    <div class="input-group">';
+        echo '        <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-user"></i></span></div><input class="form-control" type="text" name="name" required="" placeholder="Person Name" id="from-name"></div>';
+        echo '    </div>';
+        }
+        ?>
+        <div class="form-group mx-auto"><label for="from-email">Email</label>
+            <div class="input-group">
+                <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-envelope"></i></span></div><input class="form-control" type="text" name="email" required="" placeholder="Email Address" id="from-email"></div>
         </div>
-
-        <div class="person">
-            <div class="personcolumn">
-                <p>Person 2 Name</p>
-                <input type="text" size="50" name="name" id="name"/>
+        <div class="form-group mx-auto"><label for="from-phone">Phone</label>
+            <div class="input-group">
+                <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-phone"></i></span></div><input class="form-control" type="text" name="phone" required="" placeholder="Primary Phone" id="from-phone">
+                <button class="btn btn-success" style="margin-left: 5px;" onclick="event.preventDefault();GetOTP()">Get OTP</button>
             </div>
-            <div class="personcolumn">
-                <p>Enter Age</p>
-                <input type="number" name="age" id="age"/>
-            </div>
-        </div>
-        <br/><br/>
-        <div class="contactinfo">
-            <h2>Contact Information :</h2>
-            <div class="contactemail">
-                <p>Email ID : <input type="email" name="email" id="email"/></p>
-            </div>
-            <div class="contactphone">
-                <p>Phone Number : <input type="tel" name="phone" id="phone"></p>
-            </div>
-        </div>
-        <input type="submit" value="Continue"/>
+            <input class="form-control" type="text" name="otp" required="" placeholder="OTP" maxlength="4" minlength="4" id="from-phone" style="width: 30%;margin-top: 5px;">
     </div>
-</form>
+    <button class="btn btn-primary" type="submit" style="margin: 10px 0;">Continue Booking</button>
+    </form>
+</div>
     <!--------------------------------------------------End of Reservation Form-->
 
 
@@ -352,6 +347,13 @@
         }
     }
 });
+
+
+function GetOTP() {
+  console.log('rer');
+    // function below will run clear.php?h=michael
+    $.ajax({url: "CustomerDetails/GetOTP.php"});
+}
 </script>
 </body>
 </html>

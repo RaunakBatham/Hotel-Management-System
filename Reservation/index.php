@@ -1,3 +1,12 @@
+<?php
+  if(isset($_POST['start'],$_POST['people'],$_POST['start'])){
+    require '../includes/DB-Config.php';
+    session_start();
+    $_SESSION['startdate'] = $_POST['start'];
+    $_SESSION['end'] = $_POST['end'];
+    $_SESSION['people'] = $_POST['people'];
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -275,44 +284,31 @@
 <!---------------------------------------------------------Reservation Form-->
 <form method="POST" action="../CustomerDetails">
 <div class="rooms">
-    <div class="roominfo">
-        <img src="./images/image10.jpg" alt="RoomIMG"/>
-        <div class="roomnames">
-            <p>Deluxe Room</p>
-            <p>room info adfs fsdf sfd sd f as s df s df as dg  t h r  r  sg df  sdgarg ar g a gragrg</p>
-        </div>
-        <select name="quantity" id="quantity">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-        </select>
-        <div class="roomprice">
-            <p>Room Cost</p>
-            <p>$6564 X 1 = $6564</p>
-        </div>
-        <input type="submit" value="book"/>
-    </div>
-    <div class="roominfo">
-        <img src="./images/image11.jpg" alt="RoomIMG"/>
-        <div class="roomnames">
-            <p>Deluxe Room 2</p>
-            <p>room info adfs fsdf sfd sd f as s df s df as dg  t h r  r  sg df  sdgarg ar g a gragrg</p>
-        </div>
-        <select name="quantity" id="quantity">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-        </select>
-        <div class="roomprice">
-            <p>Room Cost</p>
-            <p>$6564 X 1 = $6564</p>
-        </div>
-        <input type="submit" value="book"/>
-    </div>
+    <?php
+    $query = "SELECT * from rooms";
+    $result = mysqli_query($conn, $query);
+    while($row= mysqli_fetch_assoc($result)){
+      echo '<div class="roominfo">';
+      echo '<img src="./images/image10.jpg" alt="RoomIMG"/>';
+      echo '<div class="roomnames">';
+      echo '<p>' . $row['room_name'] .'</p>';
+      echo '<p>' . $row['room_description'] . '</p>';
+      echo '</div>';
+      echo '<select name="quantity" id="quantity">';
+      echo '<option value="0">0</option>';
+      echo '<option value="1">1</option>';
+      echo '<option value="2">2</option>';
+      echo '<option value="3">3</option>';
+      echo '<option value="4">4</option>';
+      echo '</select>';
+      echo '<div class="roomprice">';
+      echo '<p>Room Cost</p>';
+      echo '<p>$' . $row['room_price'] . '</p>';
+      echo '</div>';
+      echo '<input type="submit" value="book"/>';
+      echo '</div>';
+    }
+    ?>
 </div>
 </form>
 <!--------------------------------------------------End of Reservation Form-->
