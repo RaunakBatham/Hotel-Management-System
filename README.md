@@ -1,2 +1,2 @@
 # Olive-Ivory
-Hotel Management System
+Hotel Management System in PHP Laravel
